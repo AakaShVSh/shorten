@@ -1,6 +1,5 @@
-"# URL-shortener" 
+"# URL-shortener Instructions:" 
 
-- *Instructions:*
 - Django model ShortURL with fields: id (UUID), original_url (URLField), short_code (unique CharField), and created_at (DateTimeField). Short code is unique and randomly generated (6-8 characters).
 - API endpoints:
 POST /api/shorten/ accepts JSON { "url": "<original_url>" } and returns { "short_url": "<host>/<short_code>" }.
